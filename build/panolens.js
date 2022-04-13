@@ -716,6 +716,7 @@
 
 	    THREE.Sprite.call( this, material );
 	    // this = new THREE.Sprite(material);
+	    console.log('Qua haha');
 
 	    this.canvasWidth = canvas.width;
 	    this.canvasHeight = canvas.height;

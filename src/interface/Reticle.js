@@ -17,6 +17,7 @@ function Reticle ( color = 0xffffff, autoSelect = true, dwellTime = 1500 ) {
     const material = new THREE.SpriteMaterial( { color, map: this.createCanvasTexture( canvas ) } );
 
     THREE.Sprite.call( this, material );
+    // this = new THREE.Sprite(material);
 
     this.canvasWidth = canvas.width;
     this.canvasHeight = canvas.height;

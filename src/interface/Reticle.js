@@ -18,7 +18,7 @@ function Reticle ( color = 0xffffff, autoSelect = true, dwellTime = 1500 ) {
 
     THREE.Sprite.call( this, material );
     // this = new THREE.Sprite(material);
-    console.log('Qua haha');
+    console.log('Qua haha 22');
 
     this.canvasWidth = canvas.width;
     this.canvasHeight = canvas.height;
@@ -42,9 +42,10 @@ function Reticle ( color = 0xffffff, autoSelect = true, dwellTime = 1500 ) {
 
 };
 
-Reticle.prototype = Object.assign( Object.create( THREE.Sprite.prototype ), {
+Reticle.prototype = Object.create( THREE.Sprite.prototype);
+Reticle.prototype.constructor = Reticle;
 
-    constructor: Reticle,
+Reticle.prototype.setColor = Object.assign( Object.create( THREE.Sprite.prototype ), {
 
     /**
      * Set material color
